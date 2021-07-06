@@ -36,13 +36,20 @@ A health coach is *not* a doctor. We *do not* diagnose, treat, or prescribe. Ins
 
 Positive psychology is the scientific study of strengths that empower individuals and communities to thrive. It is used in health coaching because it is founded on the belief that people want to lead meaningful and fulfilling lives, to cultivate what is best within themselves, and to enhance their experiences of love, work, and play which is supportive in achieving sustainable lifestyle changes.
 
-### **Why is the first session so much longer than the following consultations?**
+### Why is the first session so much longer than the following consultations?
 
 The first time we meet we’ll take time to understand the several aspects that make you, you. I will conduct a thorough health history to understand your past. Then we’ll explore where you are currently at on your social, emotional, spiritual, physical, and nutritional path. We’ll then get clear on your intention and level of willingness to make changes. From there we will co-create a health and wellness plan. Each follow-up meeting will range from XX-XX minutes. 
 
 ### How quickly will I see results?
 
 Results depend on several factors, including the specific goal, your commitment and adherence level, and your own bio-individuality. All of our bodies are unique (as well as our minds and spirits) which means we all react differently to change. 
+
+### What are your credentials?
+
+* I have a Masters of Education with an emphasis on Language Arts
+* I am a certified Functional Medicine Health Coach through the [Functional Medicine Coaching Academy](https://functionalmedicinecoaching.org/about/?utm_term=functional%20medicine%20coaching%20academy&utm_campaign=Branded&utm_source=adwords&utm_medium=ppc&hsa_acc=5375084190&hsa_cam=2064195742&hsa_grp=105261798895&hsa_ad=450728778237&hsa_src=g&hsa_tgt=kwd-337115025502&hsa_kw=functional%20medicine%20coaching%20academy&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw24qHBhCnARIsAPbdtlJElKMlmglU3guCO5q118RKmeQCapfDxvdKRgpGGZvWCjwN2XiyzMkaAtc_EALw_wcB)
+* I am a 200-hr certified Yoga instructor through the [Awakening Yoga Academy](https://www.awakeningyogaacademy.com/)
+* I am currently enrolled in the [Functional Nutrition Lab ](https://www.fxnutrition.com/)with Andrea Nakayama
 
 ### What is your race and sexual orientation?
 

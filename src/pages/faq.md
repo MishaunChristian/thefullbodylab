@@ -28,9 +28,9 @@ Functional Medicine is a systems biology-based approach that aims to restore hea
 
 ### Do I need a primary care physician if I’m seeing a health coach?
 
-Yes! You will still want to see your primary care physician at your recommended cadence. With your permission, a health coach can also work closely with your doctor to understand your health plan to help you turn it into a plan of action.
+Yes! You will still want to see your primary care physician at their recommended cadence. With your permission, a health coach can also work closely with your doctor to understand your health plan to help you turn it into a plan of action.
 
-A health coach is *not* a doctor. We *do not* diagnose, treat, or prescribe. Instead, we are an added member of your care team who works with you to understand imbalances, and then we support you in restoring wellness. We aim to restore a person’s health as a whole, which means looking at all lifestyle behaviors and not only food. We also take into consideration movement, stress relief, proper rest, emotional well being, relationships, life meaning and purpose, mind-body connection, and spiritual practice. 
+A health coach is *not* a doctor. We *do not* diagnose, treat, or prescribe. Instead, we are an added member of your care team who works with you to understand imbalances, and then we support you in restoring wellness. We aim to restore a person’s health as a whole, which means looking at all lifestyle behaviors and not only food. We also take into consideration movement, stress relief, sleep, emotional well-being, relationships, life meaning and purpose, mind-body connection, and spiritual practices. 
 
 ### How does positive psychology help?
 
@@ -38,7 +38,7 @@ Positive psychology is the scientific study of strengths that empower individual
 
 ### Why is the first session so much longer than the following consultations?
 
-The first time we meet we’ll take time to understand the several aspects that make you, you. I will conduct a thorough health history to understand your past. Then we’ll explore where you are currently at on your social, emotional, spiritual, physical, and nutritional path. We’ll then get clear on your intention and level of willingness to make changes. From there we will co-create a health and wellness plan. Each follow-up meeting will range from XX-XX minutes. 
+The first time we meet we’ll take time to understand the several aspects that make you, you. I will conduct a thorough health history to understand your past. Then we’ll explore where you are currently at on your journey--social, emotional, spiritual, physical, and nutritional. We’ll then get clear on your intention and level of willingness to make changes. From there we will co-create a health and wellness plan. Each follow-up meeting will be 45-minutes. 
 
 ### How quickly will I see results?
 

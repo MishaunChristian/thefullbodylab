@@ -44,6 +44,10 @@ The first time we meet we’ll take time to understand the several aspects that 
 
 Results depend on several factors, including the specific goal, your commitment and adherence level, and your own bio-individuality. All of our bodies are unique (as well as our minds and spirits) which means we all react differently to change. 
 
+### Why do you require packages?
+
+\[Answer]
+
 ### What are your credentials?
 
 * I have a Masters of Education with an emphasis on Language Arts

@@ -31,22 +31,29 @@ As we chart your course we will take into account your personal health history, 
 * You are ready to take action, prioritize yourself, and have an open mind
 
 ## What does one on one health coaching entail?
-  
+
 * An initial deep dive consultation where we will discuss personal health history, current lifestyle, and goals 
-
 * Follow-up sessions with focused action steps–cadence agreed upon by coach and client
-
 * Frequent support and motivational check-ins
-  
 * Lifestyle and behavioral suggestions (with your permission!) aligned with personal goals 
-  
 * Educational resources as requested
-  
 * A new member of your care team who will help you identify the vision for your health and find empowerment in your healing journey by supporting you to take the steps to harmonize your body, mind, and spirit
 
-Want to chat about your goals and see if I can help? Let's talk! 
+## Packages*:
 
-Schedule a free 30-min discovery call 
+### Ground: 5 sessions
+
+### Root: 10 sessions
+
+### Cultivate: 15 sessions
+
+\*Individual sessions can be added on after committing to a package.
+
+Curious about prices? \[Send me a message](link to contact page).
+
+Ready to chat about your goals and see if I can help? Let's talk! 
+
+**CTA:** Schedule a free 20-min discovery call 
 
 Sidebar: Please note that I do not offer the following services as they aren’t in my scope of work. 
 

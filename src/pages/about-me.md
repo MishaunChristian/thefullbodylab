@@ -27,7 +27,7 @@ My goal as a coach is to help you find alignment in all areas of your life that 
 
 As we work together, I am committed to collaborating on the best approach to ensuring you reach your goals while simultaneously finding ways to make it enjoyable.
 
-If you’d like to see if we’re a good fit for working together, please sign up for a free 20-minute consultation here.
+If you’d like to see if we’re a good fit for working together, \[please sign-up](link calendly) for a free 20-minute consultation. If you're not ready to chat live, shoot me some questions \[here](link to form).
 
 I hope to meet you soon!
 

@@ -58,3 +58,7 @@ Results depend on several factors, including the specific goal, your commitment 
 ### What is your race and sexual orientation?
 
 I am a cis-gendered hetero-white woman. I am doing the work to acknowledge my privilege and support anti-racist, inclusive agendas, and recognize I always have more work to do here. I understand that working with a coach who matches your life experiences can be very helpful, and I would be happy to refer you to a coach who closely matches yours if I'm not the right fit.
+
+### Have more questions?
+
+Email me at mishaun@thefullbodylab.com, and I'll be happy to respond!

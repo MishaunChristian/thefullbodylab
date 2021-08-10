@@ -2,6 +2,7 @@
 title: Contact Me
 description: Contact Me Page
 date: 2021-08-08T17:10:54.774Z
+permalink: /contact-me/index.html
 ---
 If you're ready to chat live, schedule a discovery call \[here](link calendly).
 

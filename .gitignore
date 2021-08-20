@@ -8,6 +8,15 @@
 /src/_includes/layouts/webpack.ejs
 .lazyimages.json
 
+# Next
+/.next
+
+# Vercel
+.vercel
+
+# Env files
+.env
+
 # Misc
 .DS_Store
 Thumbs.db

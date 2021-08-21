@@ -1,0 +1,21 @@
+.fblSection {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+.fblHeadlineLarge {
+  font-family: GzaTrial;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: var(--colors-fir);
+  text-align: center;
+}
+.fblTextSmall {
+  font-family: CopyTrial;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}

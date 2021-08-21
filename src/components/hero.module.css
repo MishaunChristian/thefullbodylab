@@ -1,0 +1,33 @@
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.heroDark {
+  background-color: var(--colors-sage);
+}
+.heroLight {
+  background-color: var(--colors-cloud);
+}
+
+.title {
+  font-family: GzaTrial;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.titleLight {
+  color: var(--colors-cloud);
+}
+.titleDark {
+  color: var(--colors-sage);
+}
+
+.title,
+.description {
+  text-align: center;
+}

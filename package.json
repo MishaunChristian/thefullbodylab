@@ -14,10 +14,13 @@
   "dependencies": {
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/cli": "^2.15.0",
+    "classnames": "^2.3.1",
     "next": "11.1.0",
+    "next-sanity": "^0.4.0",
     "npm-run-all": "^4.1.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-markdown": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",

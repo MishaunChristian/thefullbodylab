@@ -1,0 +1,22 @@
+.nav {
+  color: var(--colors-fir);
+  background-color: var(--colors-sage);
+}
+
+.navLogo {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-family: GzaTrial;
+}
+
+.navLinks {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}

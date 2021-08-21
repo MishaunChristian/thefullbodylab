@@ -9,7 +9,7 @@
 .lazyimages.json
 
 # Next
-/.next
+.next
 
 # Vercel
 .vercel

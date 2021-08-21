@@ -4,6 +4,7 @@ import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import ReactMarkdown from 'react-markdown';
 import Hero from '../components/hero';
+import classNames from 'classnames';
 import $ from './faq.module.css';
 const faqQuery = groq`*[_type == "faqPage"][0]{
   title,
@@ -23,11 +24,11 @@ export default function FAQ({ initialData, preview }) {
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
       <Hero data={data} />
-      <section className="fblSection">
+      <section className={classNames($.faqSection, 'fblSection')}>
         {data.faqBlocks.map(block => (
           <details className={$.block} key={block.key}>
             <summary>{block.question}</summary>
-            <ReactMarkdown>{block.answer}</ReactMarkdown>
+            <ReactMarkdown className={$.answer}>{block.answer}</ReactMarkdown>
           </details>
         ))}
       </section>

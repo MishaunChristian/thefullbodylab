@@ -1,3 +1,7 @@
+.faqSection {
+  padding-bottom: 5rem;
+}
+
 .block {
   font-size: 1.5rem;
   font-weight: 300;
@@ -6,4 +10,8 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--colors-fir);
   cursor: pointer;
+}
+
+.faqSection detils summary {
+  max-width: 70%;
 }

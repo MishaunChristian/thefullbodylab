@@ -3,6 +3,11 @@
   src: url('/fonts/CopyTrial-Regular.woff') format('woff');
 }
 @font-face {
+  font-family: CopyTrial;
+  src: url('/fonts/CopyTrial-Hair.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
   font-family: GzaTrial;
   src: url('/fonts/GzaTrial-SemiBold.woff') format('woff');
   font-weight: 600;

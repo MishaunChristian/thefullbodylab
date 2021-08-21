@@ -1,0 +1,14 @@
+.fblSection {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.fblTextSmall {
+  font-family: CopyTrial;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}

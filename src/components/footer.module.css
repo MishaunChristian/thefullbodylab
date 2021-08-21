@@ -1,26 +1,23 @@
 .footer {
   width: 100%;
   color: #fff;
-  background-color: #1c3934;
+  background-color: var(--colors-fir);
 }
 
 .footerContainer {
   max-width: 1420px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2rem 0;
+  flex-direction: column;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  margin: 20px auto;
+.footer a:hover {
+  text-decoration: var(--colors-sage) wavy underline;
 }
 
 .footerHeader {
+  padding: 2rem auto;
   font-family: GzaTrial;
   font-size: 2rem;
   max-width: 600px;
@@ -28,8 +25,10 @@
 .footerNav {
   max-width: 600px;
   list-style-type: none;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
-.footer ul li {
+.footer ul li:not(:last-child) {
   margin-bottom: 1rem;
 }

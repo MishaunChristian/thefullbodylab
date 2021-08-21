@@ -1,11 +1,12 @@
 import $ from './footer.module.css';
 import Link from 'next/link';
+import classNames from 'classnames';
 
 export default function Footer() {
   return (
     <footer className={$.footer}>
-      <div>
-        <div className={$.footerContainer}>
+      <div className={classNames($.footerContainer)}>
+        <div className="flexBetween">
           <p className={$.footerHeader}>
             The Full Body Lab is supported experimentation coaching for your health journey by
             Mishaun Christian.

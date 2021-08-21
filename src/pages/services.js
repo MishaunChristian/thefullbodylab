@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
 export default function Home() {
   return (
@@ -10,11 +9,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
-      <div className={styles.container}>
-        <section className={styles.hero}>
-          <h1 className={styles.title}>A supported experimentation lab for your health journey</h1>
-        </section>
-      </div>
     </Layout>
   );
 }

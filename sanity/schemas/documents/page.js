@@ -8,5 +8,15 @@ export const page = {
       name: 'title',
       type: 'string',
     },
+    {
+      title: 'Eyebrow',
+      name: 'eyebrow',
+      type: 'string',
+    },
+    {
+      title: 'Header',
+      name: 'header',
+      type: 'string',
+    },
   ],
 };

@@ -1,9 +1,19 @@
+@font-face {
+  font-family: CopyTrial;
+  src: url('/fonts/CopyTrial-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: GzaTrial;
+  src: url('/fonts/GzaTrial-SemiBold.woff') format('woff');
+  font-weight: 600;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: CopyTrial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {

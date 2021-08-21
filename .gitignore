@@ -14,6 +14,10 @@
 # Vercel
 .vercel
 
+# Sanity
+sanity/dist
+sanity/node_modules
+
 # Env files
 .env
 

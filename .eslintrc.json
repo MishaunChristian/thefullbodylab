@@ -16,8 +16,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings",
-    "prettier"
+    "plugin:import/warnings"
   ],
   "globals": {
     "React": true,

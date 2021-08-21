@@ -1,3 +1,89 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["react-hooks", "simple-import-sort", "path-alias"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "prettier"
+  ],
+  "globals": {
+    "React": true,
+    "PropTypes": true,
+    "process": true,
+    "globalThis": false
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@/components", "./src/components"],
+          ["@/lib", "./src/lib"],
+          ["@/pages", "./src/pages"],
+          ["@/styles", "./src/styles"]
+        ],
+        "extensions": [".js", ".css", ".svg"]
+      }
+    }
+  },
+  "rules": {
+    "react/button-has-type": "warn",
+    "react/function-component-definition": "error",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-sort-props": "error",
+    "react/jsx-wrap-multilines": "error",
+    "react/no-array-index-key": "warn",
+    "react/no-danger": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-no-target-blank": [
+      "error",
+      {
+        "allowReferrer": true
+      }
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "no-debugger": "error",
+    "no-else-return": "error",
+    "no-extra-bind": "error",
+    "no-implicit-coercion": "error",
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "simple-import-sort/sort": "error",
+    "import/no-unresolved": [2, { "ignore": ["^(all|part):"] }]
+  },
+  "overrides": [
+    {
+      "files": "./src/pages/api",
+      "env": {
+        "node": true
+      }
+    },
+    {
+      "files": "./sanity",
+      "env": { "node": true, "browser": true },
+      "extends": ["sanity"]
+    }
+  ]
 }

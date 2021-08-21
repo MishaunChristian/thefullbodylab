@@ -1,32 +1,9 @@
 .container {
-  min-height: 100vh;
-  height: 100vh;
-}
-
-.nav {
-  background-color: #7c9a92;
-}
-
-.navLogo {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.navContainer {
-  max-width: 1420px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav ul li {
-  display: inline-block;
-  margin-right: 3rem;
-  font-size: 1.5rem;
 }
 
 .hero {
   background-color: #7c9a92;
+  min-height: 60vh;
 }
 
 .main {

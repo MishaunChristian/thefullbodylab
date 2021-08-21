@@ -1,4 +1,5 @@
-import $ from './Footer.module.css';
+import $ from './footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -10,10 +11,18 @@ export default function Footer() {
             Mishaun Christian.
           </p>
           <ul className={$.footerNav}>
-            <li>Services</li>
-            <li>About Me</li>
-            <li>FAQ</li>
-            <li>Contact Us</li>
+            <li>
+              <Link href="/services">Services</Link>
+            </li>
+            <li>
+              <Link href="/about-me">About me</Link>
+            </li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <p>Copyright 2021 The Full Body Lab</p>

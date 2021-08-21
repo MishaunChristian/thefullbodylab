@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  color: #fff;
+  background-color: #1c3934;
+}
+
+.footerContainer {
+  max-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footerHeader {
+  font-family: GzaTrial;
+  font-size: 2rem;
+  max-width: 600px;
+}
+.footerNav {
+  max-width: 600px;
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-bottom: 1rem;
+}

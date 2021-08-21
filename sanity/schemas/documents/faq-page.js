@@ -1,6 +1,6 @@
-export const page = {
-  title: 'Page',
-  name: 'page',
+export const faqPage = {
+  title: 'FAQ Page',
+  name: 'faqPage',
   type: 'document',
   fields: [
     {
@@ -19,10 +19,10 @@ export const page = {
       type: 'string',
     },
     {
-      title: 'Content Blocks',
-      name: 'contentBlocks',
+      title: 'FAQ',
+      name: 'faqBlocks',
       type: 'array',
-      of: [{ type: 'block' }, { type: 'faqBlock' }],
+      of: [{ type: 'faqBlock' }],
     },
   ],
 };

@@ -1,8 +1,17 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
+import Hero from '../components/hero';
+import { querySanity, usePreviewSubscription } from '../lib/sanity';
+import { groq } from 'next-sanity';
 
-export default function Home() {
+const homeQuery = groq`*[_type == "homePage"][0]{
+  title,
+  header,
+  eyebrow,
+}`;
+
+export default function Home({ initialData, preview }) {
+  const { data } = usePreviewSubscription(homeQuery, { initialData, enabled: preview });
   return (
     <Layout>
       <Head>
@@ -11,11 +20,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
-      <div className={styles.container}>
-        <section className={styles.hero}>
-          <h1 className={styles.title}>A supported experimentation lab for your health journey</h1>
-        </section>
-      </div>
+      <Hero data={data} />
     </Layout>
   );
+}
+export async function getStaticProps({ preview = false }) {
+  const data = await querySanity(homeQuery);
+
+  return {
+    props: {
+      initialData: data,
+      preview
+    }
+  };
 }

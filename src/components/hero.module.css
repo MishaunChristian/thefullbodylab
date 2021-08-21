@@ -1,21 +1,16 @@
 .hero {
   min-height: 60vh;
-  background-color: var(--colors-sage);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.heroDark {
+  background-color: var(--colors-sage);
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.heroLight {
+  background-color: var(--colors-cloud);
 }
 
 .title {
@@ -23,7 +18,13 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  color: #fff;
+}
+
+.titleLight {
+  color: var(--colors-cloud);
+}
+.titleDark {
+  color: var(--colors-sage);
 }
 
 .title,

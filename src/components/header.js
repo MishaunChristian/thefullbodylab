@@ -4,9 +4,11 @@ import classNames from 'classnames';
 export default function Header() {
   return (
     <nav className={$.nav}>
-      <div className={classNames('fblSection', 'flexBetween')}>
-        <p className={$.navLogo}>The Full Body Lab</p>
-        <ul>
+      <div className={classNames('fblSection', 'flexBetween', 'alignItemsCenter')}>
+        <Link href="/">
+          <a className={$.navLogo}>The Full Body Lab</a>
+        </Link>
+        <ul className={$.navLinks}>
           <li>
             <Link href="/services">Services</Link>
           </li>

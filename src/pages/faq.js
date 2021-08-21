@@ -2,10 +2,12 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
-import classNames from 'classnames';
+import ReactMarkdown from 'react-markdown';
+import Hero from '../components/hero';
 import $ from './faq.module.css';
 const faqQuery = groq`*[_type == "faqPage"][0]{
   title,
+  header,
   eyebrow,
   faqBlocks[],
 }`;
@@ -20,17 +22,15 @@ export default function FAQ({ initialData, preview }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
-      <div>
-        <section className="fblSection">
-          <h1 className="fblTextSmall">{data.title}</h1>
-          {data.faqBlocks.map(block => (
-            <details className={$.block} key={block.key}>
-              <summary>{block.question}</summary>
-              <p>{block.answer}</p>
-            </details>
-          ))}
-        </section>
-      </div>
+      <Hero data={data} />
+      <section className="fblSection">
+        {data.faqBlocks.map(block => (
+          <details className={$.block} key={block.key}>
+            <summary>{block.question}</summary>
+            <ReactMarkdown>{block.answer}</ReactMarkdown>
+          </details>
+        ))}
+      </section>
     </Layout>
   );
 }

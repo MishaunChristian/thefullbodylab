@@ -1,6 +1,7 @@
 {
   "name": "thefullbodylab-website",
   "version": "0.1.0",
+  "repository": "git@github.com:tatianamac/thefullbodylab.git",
   "private": true,
   "scripts": {
     "dev:all": "run-p dev:next dev:sanity",

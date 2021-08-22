@@ -1,8 +1,15 @@
 .flexBetween {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .alignItemsCenter {
   align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .flexBetween {
+    flex-direction: row;
+  }
 }

@@ -5,11 +5,11 @@ import classNames from 'classnames';
 export default function Footer() {
   return (
     <footer className={$.footer}>
-      <div className={classNames($.footerContainer)}>
-        <div className="flexBetween">
+      <div className="fblSection">
+        <div className={classNames($.footerContainer, 'flexBetween')}>
           <p className={$.footerHeader}>
-            The Full Body Lab is supported experimentation coaching for your health journey by
-            Mishaun Christian.
+            The Full Body Lab is a supported health and wellness experience where you can experiment
+            with no judgement to find your unique routine.
           </p>
           <ul className={$.footerNav}>
             <li>
@@ -25,6 +25,7 @@ export default function Footer() {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
+          <div className={$.moon} />
         </div>
         <p>Copyright 2021 The Full Body Lab</p>
       </div>

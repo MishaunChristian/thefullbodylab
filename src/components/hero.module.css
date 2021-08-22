@@ -1,16 +1,16 @@
 .hero {
-  min-height: 60vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .heroDark {
-  background-color: var(--colors-sage);
+  background-color: var(--colours-sage);
 }
 .heroLight {
-  background-color: var(--colors-cloud);
+  background-color: var(--colours-cloud);
 }
 
 .title {
@@ -21,10 +21,10 @@
 }
 
 .titleLight {
-  color: var(--colors-cloud);
+  color: var(--colours-cloud);
 }
 .titleDark {
-  color: var(--colors-sage);
+  color: var(--colours-sage);
 }
 
 .title,
@@ -35,5 +35,10 @@
 @media screen and (min-width: 700px) {
   .title {
     font-size: 4rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+    margin-bottom: 3rem;
   }
 }

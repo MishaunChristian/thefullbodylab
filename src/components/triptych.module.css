@@ -1,5 +1,5 @@
 .triptych {
-  background-color: var(--colors-cloud);
+  background-color: var(--colours-cloud);
 }
 
 .triptychContainer {
@@ -22,7 +22,7 @@
 
 .teaserLink {
   font-family: GzaTrial;
-  border-bottom: 1px solid var(--colors-sage);
+  border-bottom: 1px solid var(--colours-sage);
   padding-bottom: 5px;
   cursor: pointer;
 }
@@ -33,11 +33,11 @@
 
 .teaserLink img:hover {
   filter: grayscale(1);
-  background-color: var(--colors-cloud);
+  background-color: var(--colours-cloud);
 }
 
 .teaserLink:hover {
-  border-bottom: 1px solid var(--colors-fir);
+  border-bottom: 1px solid var(--colours-fir);
 }
 
 @media screen and (min-width: 700px) {

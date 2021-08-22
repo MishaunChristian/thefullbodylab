@@ -3,15 +3,71 @@
 }
 
 .block {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 1.4;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--colors-fir);
+  line-height: 1.5;
+  border-top: 1px solid var(--colours-fir);
   cursor: pointer;
 }
 
-.faqSection detils summary {
-  max-width: 70%;
+.border:last-child {
+  border-bottom: 1px solid var(--colours-fir);
+}
+
+.block summary {
+  font-size: 1.25em;
+  font-family: GzaTrial;
+  color: var(--colours-fir);
+  padding: 2rem 1rem;
+  list-style: none;
+  position: relative;
+}
+
+.block > p {
+  padding: 0 0 1rem 1rem;
+}
+
+.block summary:focus {
+  background-color: var(--colours-sage-20);
+  outline: 0 solid transparent;
+}
+
+.block summary:focus:not(:focus-visible) {
+  background-color: none;
+  outline: 0 solid transparent;
+}
+
+.block > summary::after {
+  content: '\2039';
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  color: var(--colours-sage);
+  margin-right: 20px;
+  top: 30%;
+}
+
+.block[open] summary ~ * {
+  animation: sweep 500ms ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .block {
+    font-size: 1.25rem;
+  }
+  .block[open] summary ~ * {
+    max-width: 70%;
+  }
 }

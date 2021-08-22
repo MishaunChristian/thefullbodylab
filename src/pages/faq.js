@@ -28,7 +28,7 @@ export default function FAQ({ initialData, preview }) {
         {data.faqBlocks.map(block => (
           <details className={$.block} key={block.key}>
             <summary>{block.question}</summary>
-            <ReactMarkdown className={$.answer}>{block.answer}</ReactMarkdown>
+            <ReactMarkdown>{block.answer}</ReactMarkdown>
           </details>
         ))}
       </section>

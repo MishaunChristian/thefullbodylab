@@ -17,6 +17,13 @@ export const homePage = {
       title: 'Header',
       name: 'header',
       type: 'string'
+    },
+    {
+      title: 'Teaser Section',
+      description: 'Three-column section overviewing the other pages',
+      name: 'teaser',
+      type: 'array',
+      of: [{ type: 'teaser' }]
     }
   ]
 };

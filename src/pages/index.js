@@ -3,11 +3,17 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import { groq } from 'next-sanity';
-
+import Triptych from '../components/triptych';
 const homeQuery = groq`*[_type == "homePage"][0]{
   title,
   header,
   eyebrow,
+  teaser[] {
+    ...,
+    image {
+      asset->
+    }
+  },
 }`;
 
 export default function Home({ initialData, preview }) {
@@ -21,6 +27,7 @@ export default function Home({ initialData, preview }) {
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
       <Hero data={data} />
+      <Triptych data={data.teaser} />
     </Layout>
   );
 }

@@ -1,0 +1,55 @@
+.triptych {
+  background-color: var(--colors-cloud);
+}
+
+.triptychContainer {
+  flex-direction: column;
+}
+
+.tile {
+  max-width: 300px;
+  margin: -150px auto 250px;
+}
+
+.tile img {
+  border-radius: 50% 50% 0 0;
+}
+
+.teaserHeading {
+  font-family: GzaTrial;
+}
+
+.teaserLink {
+  font-family: GzaTrial;
+  border-bottom: 1px solid var(--colors-sage);
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.teaserLink img {
+  transition: 300ms all ease-in-out;
+}
+
+.teaserLink img:hover {
+  filter: grayscale(1);
+  background-color: var(--colors-cloud);
+}
+
+.teaserLink:hover {
+  border-bottom: 1px solid var(--colors-fir);
+}
+
+@media screen and (min-width: 700px) {
+  .triptychContainer {
+    flex-direction: row;
+  }
+
+  .tile {
+    margin: -150px 30px 150px auto;
+    padding: 0;
+  }
+
+  .tile:last-child {
+    margin-right: 0;
+  }
+}

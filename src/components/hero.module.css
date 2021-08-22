@@ -17,7 +17,7 @@
   font-family: GzaTrial;
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .titleLight {
@@ -30,4 +30,10 @@
 .title,
 .description {
   text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+    font-size: 4rem;
+  }
 }

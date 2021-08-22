@@ -2,6 +2,7 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 import { page } from './documents/page';
 import { faqBlock } from './objects/faq-block';
+import { teaser } from './objects/teaser';
 import { faqPage } from './documents/faq-page';
 import { homePage } from './documents/home-page';
 import { aboutMePage } from './documents/about-me-page';
@@ -14,6 +15,7 @@ export default createSchema({
     page,
     faqBlock,
     faqPage,
+    teaser,
     aboutMePage,
     servicesPage,
     homePage,

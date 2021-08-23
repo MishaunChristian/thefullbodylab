@@ -1,0 +1,69 @@
+.packageContainer {
+  padding: 2rem;
+  list-style-type: none;
+  counter-reset: packageCounter;
+}
+
+.packageTile {
+  background-color: var(--colours-sage-10);
+  max-width: 400px;
+  padding: 2rem;
+  counter-increment: packageCounter;
+  position: relative;
+}
+
+.packageTile:last-of-type {
+  border-right: 0;
+}
+
+.packageName {
+  font-family: GzaTrial;
+  color: var(--colours-fir);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bookLink {
+  background-color: var(--colours-sage);
+  color: white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .packageTile::before {
+    color: transparent;
+    content: counter(packageCounter);
+    font-family: GzaTrial;
+    font-size: 5rem;
+    position: absolute;
+    left: calc(50% - 40px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--colours-fir);
+  }
+
+  .packageTile:first-of-type::before {
+    left: calc(50% - 20px);
+  }
+}
+
+.sessionCta {
+  border-bottom: 1px solid var(--colours-fir);
+  /* border-top: 1px solid var(--colours-fir); */
+  padding: 2rem 0;
+}
+
+.packageCta {
+  font-family: GzaTrial;
+  font-size: 2rem;
+}
+
+.packageButton {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  background-color: var(--colours-sage);
+  padding: 1rem;
+  color: white;
+}

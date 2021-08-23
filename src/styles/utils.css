@@ -3,13 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.flexAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .alignItemsCenter {
   align-items: center;
 }
+.alignItemsBetween {
+  align-items: space-between;
+}
 
 @media screen and (min-width: 700px) {
-  .flexBetween {
+  .flexBetween,
+  .flexAround {
     flex-direction: row;
   }
 }

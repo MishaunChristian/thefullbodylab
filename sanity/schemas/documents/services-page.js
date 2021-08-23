@@ -17,6 +17,12 @@ export const servicesPage = {
       title: 'Header',
       name: 'header',
       type: 'string'
+    },
+    {
+      title: 'Packages',
+      name: 'packages',
+      type: 'array',
+      of: [{ type: 'servicePackage' }]
     }
   ]
 };

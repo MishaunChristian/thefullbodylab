@@ -1,0 +1,42 @@
+.goals {
+  background-color: var(--colours-sage-80);
+  margin-bottom: 4rem;
+  padding: 3rem;
+}
+
+.goals ul li {
+  list-style-type: none;
+  position: relative;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.goals ul li::before {
+  position: absolute;
+  border: 0.5px solid white;
+  width: 60px;
+  margin-left: -40px;
+  top: 10px;
+  left: -50px;
+  content: '';
+}
+
+.goalsContainer {
+  list-style-type: none;
+  max-width: 500px;
+}
+
+.goalsHeader {
+  font-family: GzaTrial;
+  font-size: 1.75rem;
+  max-width: 500px;
+  color: var(--colours-fir);
+  text-align: left;
+}
+
+@media screen and (min-width: 700px) {
+  .goalsHeader {
+    font-size: 2.5rem;
+    text-align: right;
+  }
+}

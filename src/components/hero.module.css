@@ -1,9 +1,9 @@
 .hero {
-  min-height: 30vh;
+  min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .heroDark {

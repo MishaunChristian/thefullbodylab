@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Packages from '../components/packages';
+import Goals from '../components/goals';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import Link from 'next/link';
@@ -11,6 +12,8 @@ const servicesQuery = groq`*[_type == "servicesPage"][0]{
   header,
   eyebrow,
   packages[],
+  goalsHeader,
+  goalsList[],
 }`;
 
 export default function services({ initialData, preview }) {
@@ -31,6 +34,7 @@ export default function services({ initialData, preview }) {
           />
         </Head>
         <Hero data={data} />
+        <Goals data={data} />
         <Packages data={data.packages} />
       </div>
     </Layout>

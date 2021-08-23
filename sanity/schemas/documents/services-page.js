@@ -19,6 +19,17 @@ export const servicesPage = {
       type: 'string'
     },
     {
+      title: 'Goals Header',
+      name: 'goalsHeader',
+      type: 'string'
+    },
+    {
+      title: 'Goals List',
+      name: 'goalsList',
+      type: 'array',
+      of: [{ type: 'string' }]
+    },
+    {
       title: 'Packages',
       name: 'packages',
       type: 'array',

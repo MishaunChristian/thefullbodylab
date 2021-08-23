@@ -24,6 +24,16 @@ export const homePage = {
       name: 'teaser',
       type: 'array',
       of: [{ type: 'teaser' }]
+    },
+    {
+      title: 'Testimonial Quotation',
+      name: 'testimonialQuotation',
+      type: 'string'
+    },
+    {
+      title: 'Testimonial Name',
+      name: 'testimonialName',
+      type: 'string'
     }
   ]
 };

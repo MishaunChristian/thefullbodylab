@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 24px 0 24px;
 }
+
 .fblHeadlineLarge {
   font-family: GzaTrial;
   margin: 0;
@@ -11,6 +12,7 @@
   color: var(--colours-fir);
   text-align: center;
 }
+
 .fblTextSmall {
   font-family: CopyTrial;
   font-weight: 300;
@@ -19,6 +21,10 @@
   letter-spacing: 0.2rem;
   margin: 0 0 1rem 0;
   font-size: 1rem;
+}
+
+.fblTextWhite {
+  color: var(--colours-cloud);
 }
 
 @media screen and (min-width: 1420px) {

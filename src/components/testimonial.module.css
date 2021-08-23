@@ -1,0 +1,42 @@
+.testimonial {
+  background-color: var(--colours-grass);
+  margin: 0;
+  padding: 8rem 0 6rem;
+  position: relative;
+}
+
+.testimonial::before {
+  content: '✦ ✦ ✦';
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 25px);
+  color: var(--colours-cloud-50);
+}
+
+.testimonialContainer {
+  font-size: 1.5rem;
+  max-width: 900px;
+  text-align: center;
+}
+
+.testimonialContainer figcaption {
+  font-family: GzaTrial;
+  font-size: 0.6em;
+}
+
+.testimonialContainer figure {
+  position: relative;
+}
+
+.testimonialContainer figure::before {
+  content: '✦';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+}
+
+@media screen and (min-width: 700px) {
+  .testimonialContainer {
+    font-size: 2rem;
+  }
+}

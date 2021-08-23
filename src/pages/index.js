@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import { groq } from 'next-sanity';
 import Triptych from '../components/triptych';
+import Testimonial from '../components/testimonial';
 const homeQuery = groq`*[_type == "homePage"][0]{
   title,
   header,
@@ -14,6 +15,8 @@ const homeQuery = groq`*[_type == "homePage"][0]{
       asset->
     }
   },
+  testimonialName,
+  testimonialQuotation,
 }`;
 
 export default function Home({ initialData, preview }) {
@@ -28,6 +31,7 @@ export default function Home({ initialData, preview }) {
       </Head>
       <Hero data={data} />
       <Triptych data={data.teaser} />
+      <Testimonial data={data} />
     </Layout>
   );
 }

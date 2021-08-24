@@ -1,6 +1,15 @@
 .nav {
   color: var(--colours-fir);
   background-color: var(--colours-sage);
+  padding: 0.25rem 0;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .navLogo {
@@ -9,6 +18,11 @@
   font-weight: 400;
   letter-spacing: 0.1rem;
   font-family: GzaTrial;
+  text-align: left;
+}
+
+.navLogo a:hover {
+  text-decoration: none;
 }
 
 .navLinks {
@@ -19,4 +33,77 @@
 .nav ul li {
   display: inline-block;
   margin-right: 3rem;
+}
+
+.nav a {
+  padding: 0.5rem 0;
+}
+
+.nav a:hover {
+  text-decoration: var(--colours-cloud) wavy underline;
+  text-decoration-thickness: 1.22px;
+}
+
+.nav a:focus {
+  position: relative;
+  box-shadow: inset 0 0 0 1px var(--colours-sage-test);
+  border-radius: 10px;
+  outline: 0 transparent solid;
+}
+
+.desktopNavContainer {
+  display: none;
+}
+
+.mobileNavContainer {
+  margin-top: 60px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colours-sage);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+}
+
+.mobileNavContainer ul {
+  padding: 0 1.5rem;
+}
+
+.mobileNavContainer ul li {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.menuToggle {
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  /* background-color: var(--colours-fir); */
+  border: 0;
+  cursor: pointer;
+  /* border-top: 1px solid var(--colours-fir);
+  border-bottom: 1px solid var(--colours-fir); */
+}
+
+.menuLine {
+  height: 2px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-color: var(--colours-fir);
+}
+
+@media screen and (min-width: 800px) {
+  .menuToggle {
+    display: none;
+  }
+  .desktopNavContainer {
+    display: block;
+  }
+
+  .mobileNavContainer {
+    display: none;
+  }
 }

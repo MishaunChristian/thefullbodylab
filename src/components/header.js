@@ -1,28 +1,33 @@
 import $ from './header.module.css';
 import Link from 'next/link';
+import DesktopNav from './desktopNav';
+import MobileNav from './mobileNav';
 import classNames from 'classnames';
+import { useState } from 'react';
+
 export default function Header() {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <nav className={$.nav}>
-      <div className={classNames('fblSection', 'flexBetween', 'alignItemsCenter')}>
+      <div className={classNames($.navContainer, 'fblSection')}>
         <Link href="/">
           <a className={$.navLogo}>The Full Body Lab</a>
         </Link>
-        <ul className={$.navLinks}>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/about-me">About me</Link>
-          </li>
-          <li>
-            <Link href="/faq">FAQ</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
+        <button
+          className={$.menuToggle}
+          onClick={() => setToggle(!toggle)}
+          toggle={toggle}
+          aria-label="Navigation menu"
+          aria-expanded="true"
+        >
+          <div className={$.menuLine} />
+          <div className={$.menuLine} />
+          <div className={$.menuLine} />
+        </button>
+        <DesktopNav />
       </div>
+      <MobileNav toggle={toggle} />
     </nav>
   );
 }

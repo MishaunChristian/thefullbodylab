@@ -1,5 +1,5 @@
 .packageContainer {
-  padding: 2rem;
+  padding: 3rem 0;
   list-style-type: none;
   counter-reset: packageCounter;
 }
@@ -77,12 +77,4 @@
   background-color: var(--colours-sage);
   padding: 1rem;
   color: white;
-}
-
-/* Can be refactored with teaser link for one global util */
-.teaserLink {
-  font-family: GzaTrial;
-  border-bottom: 1px solid var(--colours-sage);
-  padding-bottom: 5px;
-  cursor: pointer;
 }

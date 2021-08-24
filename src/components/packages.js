@@ -16,7 +16,7 @@ export default function Packages({ data }) {
         <p className="textCenter">
           Curious about prices?{' '}
           <Link href="/">
-            <a className={$.teaserLink}>Send me a message</a>
+            <a className="textLink">Send me a message</a>
           </Link>
         </p>
         <ol className={classNames($.packageContainer, 'fblSection flexAround alignItemsBetween')}>

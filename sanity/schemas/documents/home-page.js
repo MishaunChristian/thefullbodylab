@@ -19,6 +19,16 @@ export const homePage = {
       type: 'string'
     },
     {
+      title: 'Intro Header',
+      name: 'introHeader',
+      type: 'string'
+    },
+    {
+      title: 'Intro Copy',
+      name: 'introCopy',
+      type: 'markdown'
+    },
+    {
       title: 'Teaser Section',
       description: 'Three-column section overviewing the other pages',
       name: 'teaser',

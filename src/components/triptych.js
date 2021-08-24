@@ -10,7 +10,7 @@ export default function Triptych({ data }) {
         {data.map(teaser => (
           <div key={teaser._key} className={$.tile}>
             <Link href={teaser.link}>
-              <a className={$.teaserLink}>
+              <a className="textLink">
                 <Image
                   src={teaser.image?.asset?.url}
                   layout="responsive"
@@ -22,7 +22,7 @@ export default function Triptych({ data }) {
             <h2 className={$.teaserHeading}>{teaser.heading}</h2>
             <p>{teaser.copy}</p>
             <Link href={teaser.link}>
-              <a className={$.teaserLink}>{teaser.linkCopy}</a>
+              <a className="textLink">{teaser.linkCopy}</a>
             </Link>
           </div>
         ))}

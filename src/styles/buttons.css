@@ -1,0 +1,10 @@
+.textLink {
+  font-family: GzaTrial;
+  border-bottom: 1px solid var(--colours-sage);
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.textLink:hover {
+  border-bottom: 1px solid var(--colours-fir);
+}

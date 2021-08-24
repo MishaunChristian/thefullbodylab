@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .flexAround {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,10 @@
 }
 .alignItemsBetween {
   align-items: space-between;
+}
+
+.bgSage {
+  background-color: var(--colours-sage);
 }
 
 @media screen and (min-width: 900px) {

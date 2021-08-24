@@ -21,6 +21,12 @@ export default function Contact({ initialData, preview }) {
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
       <Hero data={data} />
+      {/* <div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
+ <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+ <script>
+ Calendly.initInlineWidget({ url: 'https://calendly.com/thefullbodylab/discovery-call' });
+ </script>
+</div> */}
     </Layout>
   );
 }

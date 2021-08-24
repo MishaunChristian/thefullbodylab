@@ -1,6 +1,8 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Head from 'next/head';
+import { PopupWidget } from 'react-calendly';
+
 export default function Layout({ children }) {
   return (
     <>
@@ -15,6 +17,13 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main>{children}</main>
+      <PopupWidget
+        url="https://calendly.com/thefullbodylab/discovery-call"
+        pageSettings={{
+          primaryColor: '7d9b93',
+          textColor: '4d5055'
+        }}
+      />
       <Footer />
     </>
   );

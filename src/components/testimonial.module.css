@@ -1,5 +1,5 @@
 .testimonial {
-  background-color: var(--colours-grass);
+  border-top: 10px solid var(--colours-test-4);
   margin: 0;
   padding: 8rem 0 6rem;
   position: relative;
@@ -10,7 +10,7 @@
   position: absolute;
   top: 70px;
   left: calc(50% - 25px);
-  color: var(--colours-cloud-50);
+  color: var(--colours-test-3);
 }
 
 .testimonialContainer {

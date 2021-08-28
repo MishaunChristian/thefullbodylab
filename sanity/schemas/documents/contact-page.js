@@ -17,6 +17,11 @@ export const contactPage = {
       title: 'Header',
       name: 'header',
       type: 'string'
+    },
+    {
+      title: 'Body',
+      name: 'body',
+      type: 'markdown'
     }
   ]
 };

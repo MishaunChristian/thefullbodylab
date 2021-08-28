@@ -1,6 +1,6 @@
 :root {
   --colours-sage: hsla(164, 13%, 55%, 1);
-  --colours-fir: hsl(170, 34%, 17%, 1);
+  --colours-fir: #1d3a35;
   --colours-grass: hsla(170, 51%, 40%, 1);
   --colours-sand: #ede1ce;
   --colours-cloud: hsla(40, 100%, 97%, 1);
@@ -9,9 +9,14 @@
   --colours-fir-20: hsl(170, 34%, 17%, 0.2);
   --colours-sage-10: hsla(164, 13%, 55%, 0.1);
   --colours-sage-20: hsla(164, 13%, 55%, 0.2);
+  --colours-sage-30: hsla(164, 13%, 55%, 0.3);
   --colours-sage-80: hsla(164, 13%, 55%, 0.8);
   --colours-sage-test: hsla(164, 13%, 80%, 1);
   --colours-grass-80: hsla(170, 51%, 40%, 0.8);
   --colours-cloud-10: hsla(40, 100%, 97%, 0.1);
   --colours-cloud-50: hsla(40, 100%, 97%, 0.5);
+  --colours-test-1: #435451;
+  --colours-test-2: #87773d;
+  --colours-test-3: #874329;
+  --colours-test-4: #876536;
 }

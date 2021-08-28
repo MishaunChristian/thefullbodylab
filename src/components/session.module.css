@@ -1,0 +1,10 @@
+.sessionCta {
+  border-top: 1px solid var(--colours-fir);
+  padding: 4rem 0 2rem;
+  margin-bottom: 6rem;
+}
+
+.packageCta {
+  font-family: GzaTrial;
+  font-size: 2rem;
+}

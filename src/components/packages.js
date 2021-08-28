@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-
+import Session from '../components/session';
 export default function Packages({ data }) {
   return (
     <>
@@ -21,20 +21,18 @@ export default function Packages({ data }) {
         </p>
         <ol className={classNames($.packageContainer, 'fblSection flexAround alignItemsBetween')}>
           {data.map(session => (
-            <li key={session._key} className={$.packageTile}>
-              <h3 className={$.packageName}>{session.heading}</h3>
-              <ReactMarkdown>{session.copy}</ReactMarkdown>
+            <li key={session._key} className={classNames($.packageTile, 'flexColumn')}>
+              <div className="marginBottomAuto">
+                <h3 className={$.packageName}>{session.heading}</h3>
+                <ReactMarkdown>{session.copy}</ReactMarkdown>
+              </div>
+              <div className={classNames($.packageFooter, 'flexBetween')}>
+                <p>{session.subhead}</p>
+                <p>{session.session}</p>
+              </div>
             </li>
           ))}
         </ol>
-      </section>
-      <section className="fblSection">
-        <div className={classNames($.sessionCta, 'flexAround alignItemsCenter')}>
-          <p className={$.packageCta}>Ready to start? Let's partner</p>
-          <Link href="/">
-            <a className={$.packageButton}>Book a session</a>
-          </Link>
-        </div>
       </section>
     </>
   );

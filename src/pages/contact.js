@@ -3,11 +3,13 @@ import Layout from '../components/layout';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import Hero from '../components/hero';
+import ReactMarkdown from 'react-markdown';
 
 const contactQuery = groq`*[_type == "contactPage"][0]{
   title,
   header,
   eyebrow,
+  body,
 }`;
 
 export default function Contact({ initialData, preview }) {
@@ -21,12 +23,30 @@ export default function Contact({ initialData, preview }) {
         <link rel="preload" href="/CopyTrial-Regular.woff" as="font" type="font/woff" crossOrigin />
       </Head>
       <Hero data={data} />
-      {/* <div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
- <script>
- Calendly.initInlineWidget({ url: 'https://calendly.com/thefullbodylab/discovery-call' });
- </script>
-</div> */}
+      <section className="fblSection flexBetween">
+        <div className="copyBlock">
+          <ReactMarkdown>{data.body}</ReactMarkdown>
+        </div>
+        <div className="linkBlock">
+          <p>
+            <span role="presentation" className="emoji">
+              ✉️
+            </span>
+            <a className="textLink" href="https://calendly.com/thefullbodylab/discovery-call">
+              Schedule a call
+            </a>
+          </p>
+          <p>
+            <span role="presentation" className="emoji">
+              📱
+            </span>
+            <a className="textLink" href="mailto:mishaun@thefullbodylab.com">
+              Email me
+            </a>
+          </p>
+        </div>
+      </section>
+      <Session />
     </Layout>
   );
 }

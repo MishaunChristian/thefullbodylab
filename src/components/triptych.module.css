@@ -1,5 +1,11 @@
 .triptych {
-  background-color: var(--colours-cloud);
+  background: linear-gradient(
+    to bottom,
+    white,
+    white 150px,
+    var(--colours-cloud) 150px,
+    var(--colours-cloud) 100%
+  );
 }
 
 .triptychContainer {
@@ -8,7 +14,7 @@
 
 .tile {
   max-width: 300px;
-  margin: -150px auto 250px;
+  margin: 0 auto 100px;
 }
 
 .tile img {
@@ -36,17 +42,37 @@
   background-color: var(--colours-cloud);
 }
 
+.teaserLink:focus-visible {
+  outline: 0 transparent solid;
+  transform: scale(1.05);
+}
+
+.teaserLink:focus:not(:focus-visible) {
+  outline: 0 transparent solid;
+  /* TODO: Figure out focus style for images */
+}
+
 .teaserLink:hover {
   border-bottom: 1px solid var(--colours-fir);
 }
 
 @media screen and (min-width: 700px) {
+  .triptych {
+    background: linear-gradient(
+      to bottom,
+      white,
+      white 25%,
+      var(--colours-cloud) 25%,
+      var(--colours-cloud) 100%
+    );
+  }
+
   .triptychContainer {
     flex-direction: row;
   }
 
   .tile {
-    margin: -150px 30px 150px auto;
+    margin: 0 30px 150px auto;
     padding: 0;
   }
 

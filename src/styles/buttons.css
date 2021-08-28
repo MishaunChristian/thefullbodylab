@@ -8,3 +8,28 @@
 .textLink:hover {
   border-bottom: 1px solid var(--colours-fir);
 }
+
+.textLink:focus-visible {
+  background-color: var(--colours-sage-30);
+  outline: 0 transparent solid;
+}
+
+.textLink:focus:not(:focus-visible) {
+  box-shadow: 0;
+  border-radius: 10px;
+  outline: 0 transparent solid;
+}
+
+.boxButton {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  background-color: var(--colours-fir);
+  padding: 1rem;
+  color: white;
+}
+
+.boxButton:hover {
+  scale: 1.025;
+  transition: 100ms all ease-in-out;
+}

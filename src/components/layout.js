@@ -2,6 +2,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Head from 'next/head';
 import { PopupWidget } from 'react-calendly';
+import Session from '../components/session';
 
 export default function Layout({ children }) {
   return (
@@ -24,6 +25,7 @@ export default function Layout({ children }) {
           textColor: '4d5055'
         }}
       />
+      <Session />
       <Footer />
     </>
   );

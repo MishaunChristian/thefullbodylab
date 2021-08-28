@@ -6,7 +6,7 @@ export default function Intro({ data }) {
   return (
     <section className={classNames($.intro, 'fblSection flexAround')}>
       <p className={$.introTitle}>{data.introHeader}</p>
-      <div className={$.introCopy}>
+      <div className="copyBlock">
         <ReactMarkdown>{data.introCopy}</ReactMarkdown>
         <Link href="/">
           <a className="textLink">Learn more about functional coaching</a>

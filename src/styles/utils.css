@@ -10,11 +10,39 @@
   justify-content: space-around;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 .alignItemsCenter {
   align-items: center;
 }
 .alignItemsBetween {
   align-items: space-between;
+}
+
+.marginBottomAuto {
+  margin-bottom: auto;
+}
+
+.copyBlock {
+  line-height: 1.6;
+  max-width: 600px;
+  width: 100%;
+}
+
+.linkBlock {
+  width: 100%;
+  max-width: 600px;
+}
+
+.linkBlock a {
+  font-family: GzaTrial;
+}
+
+.emoji {
+  margin-right: 1rem;
 }
 
 .bgSage {

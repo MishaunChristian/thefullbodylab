@@ -11,11 +11,6 @@
   color: var(--colours-fir);
 }
 
-.introCopy {
-  line-height: 1.6;
-  max-width: 600px;
-}
-
 .titleLight {
   color: var(--colours-cloud);
 }

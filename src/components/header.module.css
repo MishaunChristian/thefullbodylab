@@ -1,7 +1,11 @@
 .nav {
   color: var(--colours-fir);
   background-color: var(--colours-sage);
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
 }
 
 .navContainer {
@@ -9,7 +13,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .navLogo {
@@ -19,6 +22,7 @@
   letter-spacing: 0.1rem;
   font-family: GzaTrial;
   text-align: left;
+  padding: 0.5rem 1rem;
 }
 
 .navLogo a:hover {
@@ -35,20 +39,44 @@
   margin-right: 3rem;
 }
 
-.nav a {
-  padding: 0.5rem 0;
+.navLinks a {
+  padding: 0.5rem 1rem;
 }
 
-.nav a:hover {
+.navLinks a:hover {
   text-decoration: var(--colours-cloud) wavy underline;
   text-decoration-thickness: 1.22px;
 }
 
-.nav a:focus {
-  position: relative;
-  box-shadow: inset 0 0 0 1px var(--colours-sage-test);
+.navLogo:focus-visible,
+.navLinks a:focus-visible,
+.navButton a:focus-visible {
+  box-shadow: 0 0 0 1px var(--colours-sage-test);
+  outline: 0 transparent solid;
+  border-radius: 10px;
+}
+
+.navLogo:focus-visible,
+.navLinks a:focus:not(:focus-visible),
+.navButton a:focus:not(:focus-visible) {
+  box-shadow: 0;
   border-radius: 10px;
   outline: 0 transparent solid;
+}
+
+.navButton {
+  background-color: var(--colours-fir);
+  padding: 0.5rem 1rem;
+  color: var(--colours-sage);
+  border: 1px solid var(--colours-fir);
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-bottom: 0;
+}
+
+.navButton:hover {
+  scale: 1.05;
+  text-decoration: none;
 }
 
 .desktopNavContainer {
@@ -56,7 +84,7 @@
 }
 
 .mobileNavContainer {
-  margin-top: 60px;
+  margin-top: 55px;
   width: 100vw;
   height: 100vh;
   background-color: var(--colours-sage);
@@ -78,21 +106,34 @@
 }
 
 .menuToggle {
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 25px;
   background-color: transparent;
-  /* background-color: var(--colours-fir); */
   border: 0;
   cursor: pointer;
-  /* border-top: 1px solid var(--colours-fir);
-  border-bottom: 1px solid var(--colours-fir); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menuToggle:focus-visible {
+  background-color: var(--colours-fir-2 0);
+  outline: 0 transparent solid;
+}
+
+.menuToggle:focus:not(:focus-visible) {
+  background-color: var(--colours-sage);
+  outline: 0 transparent solid;
 }
 
 .menuLine {
   height: 2px;
   width: 100%;
-  margin-bottom: 0.5rem;
   background-color: var(--colours-fir);
+}
+
+.menuLine:last-of-type {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 800px) {

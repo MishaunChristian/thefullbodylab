@@ -46,7 +46,6 @@ export default function Contact({ initialData, preview }) {
           </p>
         </div>
       </section>
-      <Session />
     </Layout>
   );
 }

@@ -21,6 +21,7 @@ export default function AboutMe({ initialData, preview }) {
         </Head>
         <Hero data={data} />
       </div>
+      {/* https://codepen.io/liborgabrhel/pen/Ljzwxe */}
     </Layout>
   );
 }

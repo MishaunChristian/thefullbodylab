@@ -9,6 +9,7 @@ import { homePage } from './documents/home-page';
 import { aboutMePage } from './documents/about-me-page';
 import { servicesPage } from './documents/services-page';
 import { contactPage } from './documents/contact-page';
+import siteSettings from './siteSettings';
 
 export default createSchema({
   name: 'default',
@@ -21,6 +22,7 @@ export default createSchema({
     aboutMePage,
     servicesPage,
     homePage,
-    contactPage
+    contactPage,
+    siteSettings
   ])
 });

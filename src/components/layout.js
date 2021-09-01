@@ -1,13 +1,14 @@
+import { groq } from 'next-sanity';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Head from 'next/head';
+import Meta from '../components/meta';
 import { PopupWidget } from 'react-calendly';
 import Session from '../components/session';
 
-export default function Layout({ children }) {
+export default function Layout({ children, title, metaData }) {
   return (
     <>
-      <Head>
+      <Meta title={title} data={metaData}>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,7 +16,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Meta>
       <Header />
       <main>{children}</main>
       <PopupWidget

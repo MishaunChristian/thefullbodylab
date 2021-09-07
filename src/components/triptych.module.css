@@ -1,11 +1,12 @@
 .triptych {
-  background: linear-gradient(
+  background-color: var(--colours-cloud);
+  /* background: linear-gradient(
     to bottom,
     white,
     white 150px,
     var(--colours-cloud) 150px,
     var(--colours-cloud) 100%
-  );
+  ); */
 }
 
 .triptychContainer {
@@ -14,7 +15,7 @@
 
 .tile {
   max-width: 300px;
-  margin: 0 auto 100px;
+  margin: 100px auto;
 }
 
 .tile img {
@@ -38,7 +39,6 @@
 }
 
 .teaserLink img:hover {
-  filter: grayscale(1);
   background-color: var(--colours-cloud);
 }
 
@@ -58,13 +58,13 @@
 
 @media screen and (min-width: 700px) {
   .triptych {
-    background: linear-gradient(
+    /* background: linear-gradient(
       to bottom,
       white,
       white 25%,
       var(--colours-cloud) 25%,
       var(--colours-cloud) 100%
-    );
+    ); */
   }
 
   .triptychContainer {
@@ -72,7 +72,7 @@
   }
 
   .tile {
-    margin: 0 30px 150px auto;
+    margin: 50px auto;
     padding: 0;
   }
 

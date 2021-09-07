@@ -57,6 +57,11 @@ export const aboutMePage = {
       title: 'Background Copy',
       name: 'background',
       type: 'markdown'
+    },
+    {
+      title: 'Pulled Quote',
+      name: 'quote',
+      type: 'string'
     }
   ]
 };

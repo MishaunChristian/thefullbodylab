@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
-import ReactMarkdown from 'react-markdown';
+import StyledMarkdown from '../components/styledMarkdown';
 
 const aboutMeQuery = groq`*[_type == "aboutMePage"][0]{
   title,
@@ -17,6 +17,7 @@ const aboutMeQuery = groq`*[_type == "aboutMePage"][0]{
   certification,
   backgroundHead,
   background,
+  quote,
 }`;
 
 const metaQuery = groq`*[_type == "siteSettings"][0]{
@@ -32,18 +33,14 @@ export default function AboutMe({ metaData, initialData, preview }) {
       <section className="fblSection flexBetween">
         <div className="copyBlock">
           <h2 className="fblTextMedium">{data.approachHead}</h2>
-          <ReactMarkdown>{data.approach}</ReactMarkdown>
-          If this sounds, blah blah blah,{' '}
-          <a className="textLink" href="mailto:mishaun@thefullbodylab.com">
-            schedule a 20-min discovery session
-          </a>
+          <StyledMarkdown>{data.approach}</StyledMarkdown>
         </div>
         <div className="copyBlock">
           <h2 className="fblTextMedium">{data.certificationHead}</h2>
-          <ReactMarkdown>{data.certification}</ReactMarkdown>
+          <StyledMarkdown>{data.certification}</StyledMarkdown>
 
           <h2 className="fblTextMedium">{data.goalHead}</h2>
-          <ReactMarkdown>{data.goal}</ReactMarkdown>
+          <StyledMarkdown>{data.goal}</StyledMarkdown>
         </div>
       </section>
       <section>
@@ -55,7 +52,7 @@ export default function AboutMe({ metaData, initialData, preview }) {
       <section className="fblSection flexBetween">
         <div className="copyBlock">
           <h2 className="fblTextMedium">{data.backgroundHead}</h2>
-          <ReactMarkdown>{data.background}</ReactMarkdown>
+          <StyledMarkdown>{data.background}</StyledMarkdown>
           {/* If this sounds, blah blah blah,{' '}
           <a className="textLink" href="mailto:mishaun@thefullbodylab.com">
             schedule a 20-min discovery session

@@ -17,7 +17,7 @@
   font-family: GzaTrial;
   font-weight: 300;
   color: var(--colours-fir);
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
 }
 .fblTextSmall {
@@ -40,7 +40,7 @@
   border-bottom: 1px solid var(--colours-earth);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  width: 50%;
+  width: 80%;
 }
 
 .fblTextWhite {
@@ -50,5 +50,9 @@
 @media screen and (min-width: 1420px) {
   .fblSection {
     padding: 0;
+  }
+
+  .fblTextQuote {
+    width: 50%;
   }
 }

@@ -13,6 +13,13 @@
   text-align: center;
 }
 
+.fblTextMedium {
+  font-family: GzaTrial;
+  font-weight: 300;
+  color: var(--colours-fir);
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
 .fblTextSmall {
   font-family: Karla;
   font-weight: 300;
@@ -21,6 +28,19 @@
   letter-spacing: 0.2rem;
   margin: 0 0 1rem 0;
   font-size: 1rem;
+}
+.fblTextQuote {
+  font-family: GzaTrial;
+  margin: 3rem auto;
+  line-height: 1.15;
+  font-size: 2.5rem;
+  color: var(--colours-fir);
+  text-align: center;
+  border-top: 1px solid var(--colours-earth);
+  border-bottom: 1px solid var(--colours-earth);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
 }
 
 .fblTextWhite {

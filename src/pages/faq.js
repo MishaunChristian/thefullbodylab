@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
-import ReactMarkdown from 'react-markdown';
+import StyledMarkdown from '../components/styledMarkdown';
 import Hero from '../components/hero';
 import classNames from 'classnames';
 import $ from './faq.module.css';
@@ -39,7 +39,7 @@ export default function FAQ({ metaData, initialData, preview }) {
         {data.faqBlocks.map(block => (
           <details className={$.block} key={block._key}>
             <summary>{block.question}</summary>
-            <ReactMarkdown>{block.answer}</ReactMarkdown>
+            <StyledMarkdown>{block.answer}</StyledMarkdown>
           </details>
         ))}
       </section>

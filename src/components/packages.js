@@ -2,7 +2,7 @@ import $ from './packages.module.css';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
+import StyledMarkdown from '../components/styledMarkdown';
 import Session from '../components/session';
 export default function Packages({ data }) {
   return (
@@ -24,7 +24,7 @@ export default function Packages({ data }) {
             <li key={session._key} className={classNames($.packageTile, 'flexColumn')}>
               <div className="marginBottomAuto">
                 <h3 className={$.packageName}>{session.heading}</h3>
-                <ReactMarkdown>{session.copy}</ReactMarkdown>
+                <StyledMarkdown>{session.copy}</StyledMarkdown>
               </div>
               <div className={classNames($.packageFooter, 'flexBetween')}>
                 <p>{session.subhead}</p>

@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import { groq } from 'next-sanity';
 import { querySanity, usePreviewSubscription } from '../lib/sanity';
 import Hero from '../components/hero';
-import ReactMarkdown from 'react-markdown';
+import StyledMarkdown from '../components/styledMarkdown';
 
 const contactQuery = groq`*[_type == "contactPage"][0]{
   title,
@@ -24,7 +24,7 @@ export default function Contact({ metaData, initialData, preview }) {
       <Hero data={data} />
       <section className="fblSection flexBetween">
         <div className="copyBlock">
-          <ReactMarkdown>{data.body}</ReactMarkdown>
+          <StyledMarkdown>{data.body}</StyledMarkdown>
         </div>
         <div className="linkBlock">
           <p>

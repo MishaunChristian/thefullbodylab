@@ -2,7 +2,7 @@ import $ from './goals.module.css';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
+import StyledMarkdown from '../components/styledMarkdown';
 
 export default function Packages({ data }) {
   return (
